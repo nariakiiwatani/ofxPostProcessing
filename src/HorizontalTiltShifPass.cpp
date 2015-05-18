@@ -72,6 +72,7 @@ namespace itg
     void HorizontalTiltShifPass::render(ofFbo& readFbo, ofFbo& writeFbo)
     {
         writeFbo.begin();
+		ofClear(0);
         
         shader.begin();
         shader.setUniformTexture("tDiffuse", readFbo.getTextureReference(), 0);

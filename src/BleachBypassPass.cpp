@@ -73,6 +73,7 @@ namespace itg
     void BleachBypassPass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depthTex)
     {
         writeFbo.begin();
+		ofClear(0);
         
         
         shader.begin();

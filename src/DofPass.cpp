@@ -128,7 +128,8 @@ namespace itg
     void DofPass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depthTex)
     {            
         writeFbo.begin();
-        
+		ofClear(0);
+       
         shader.begin();
                     
         shader.setUniformTexture("tColor", readFbo.getTextureReference(), 0);

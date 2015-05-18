@@ -80,6 +80,7 @@ namespace itg
     void LimbDarkeningPass::render(ofFbo& readFbo, ofFbo& writeFbo)
     {
         writeFbo.begin();
+		ofClear(0);
         
         shader.begin();
         shader.setUniformTexture("myTexture", readFbo.getTextureReference(), 0);

@@ -114,6 +114,7 @@ namespace itg
     void EdgePass::render(ofFbo& readFbo, ofFbo& writeFbo)
     {
         writeFbo.begin();
+		ofClear(0);
         
         shader.begin();
         shader.setUniformTexture("tex", readFbo.getTextureReference(), 0);

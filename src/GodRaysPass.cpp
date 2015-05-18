@@ -99,6 +99,7 @@ namespace itg
     void GodRaysPass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depthTex)
     {
         writeFbo.begin();
+		ofClear(0);
         
         shader.begin();
         shader.setUniformTexture("otex", readFbo.getTextureReference(), 0);

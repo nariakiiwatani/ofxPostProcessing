@@ -387,7 +387,8 @@ namespace itg
     void DofAltPass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depth)
     {
         writeFbo.begin();
-        
+		ofClear(0);
+
         shader.begin();
         
         shader.setUniformTexture("bgl_RenderedTexture", readFbo.getTextureReference(), 0);

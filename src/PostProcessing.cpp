@@ -59,6 +59,9 @@ namespace itg
         for (int i = 0; i < 2; ++i)
         {
             pingPong[i].allocate(s);
+			pingPong[i].begin();
+			ofClear(0);
+			pingPong[i].end();
         }
         
         s.useDepth = true;

@@ -107,7 +107,7 @@ namespace itg
         yConv->render(fbos[0], fbos[1]);
         
         writeFbo.begin();
-        ofClear(0, 0, 0, 255);
+		ofClear(0);
         ofSetColor(255, 255, 255);
         readFbo.draw(0, 0);
         ofEnableAlphaBlending();

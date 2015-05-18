@@ -138,7 +138,8 @@ namespace itg
     void FakeSSSPass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depthTex)
     {
         writeFbo.begin();
-        
+		ofClear(0);
+       
         shader.begin();
         
         shader.setUniformTexture("Texture", readFbo.getTextureReference(), 0);

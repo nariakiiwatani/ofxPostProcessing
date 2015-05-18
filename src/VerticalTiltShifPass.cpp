@@ -72,7 +72,8 @@ namespace itg
     void VerticalTiltShifPass::render(ofFbo& readFbo, ofFbo& writeFbo)
     {
         writeFbo.begin();
-        
+		ofClear(0);
+       
         shader.begin();
         shader.setUniformTexture("tDiffuse", readFbo.getTextureReference(), 0);
         shader.setUniform1f("v", v);

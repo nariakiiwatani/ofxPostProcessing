@@ -158,6 +158,7 @@ namespace itg
     void LUTPass::render(ofFbo& readFbo, ofFbo& writeFbo)
     {
         writeFbo.begin();
+		ofClear(0);
 
         shader.begin();
 

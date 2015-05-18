@@ -148,7 +148,8 @@ namespace itg
     {
         
         writeFbo.begin();
-        
+		ofClear(0);
+       
         shader.begin();
         
         shader.setUniformTexture("normalImage", readFbo.getTextureReference(), 0);

@@ -64,6 +64,7 @@ namespace itg
     void KaleidoscopePass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depth)
     {
         writeFbo.begin();
+		ofClear(0);
         
         shader.begin();
         

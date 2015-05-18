@@ -170,7 +170,8 @@ namespace itg
     void NoiseWarpPass::render(ofFbo& readFbo, ofFbo& writeFbo, ofTexture& depth)
     {
         writeFbo.begin();
-        shader.begin();
+		ofClear(0);
+       shader.begin();
         shader.setUniform1f("time", ofGetElapsedTimef());
         shader.setUniformTexture("tex", readFbo.getTextureReference(), 0);
         shader.setUniform1f("frequency", frequency);

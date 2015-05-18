@@ -39,7 +39,7 @@
 #ifdef _ITG_TWEAKABLE
     #include "Tweakable.h"
 #endif
-
+#include "ofGraphics.h"
 #define STRINGIFY(A) #A
 
 namespace itg
